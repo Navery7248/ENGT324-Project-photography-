@@ -1,0 +1,160 @@
+<Doctype! html>
+<html>
+
+<head>
+	<title>Inspiring Photographers</title>
+
+	<link rel="stylesheet" href="mystylesheet.css">
+	
+<style>
+	.border {
+		background-color: white;
+  		width: 1100px;
+  		border: 15px solid black;
+  		padding: 50px 50px 50px 50px;
+  		margin: 20px 20px 20px 20px;
+	}
+	ul {
+	    
+		float: left;
+		background-color: white;
+  		width: 150px;
+  		border: 10px solid black;
+  		padding: 25px 25px 25px 50px;
+	
+	}
+	img {
+	border: 5px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	}
+	.collapsible {
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+	.active, .collapsible:hover {
+		background-color: #2573C6;
+	}
+	.content {
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+</style>
+
+</head>
+
+<body>
+<ul>
+		<li><a href="pg.0 Profile Upload.html"> Profile</a></li>
+		<li><a href="index.html"> Home</a></li>
+		<li><a href="pg.5 Inspiring Photographers.html">Inspriring Photos</a></li>
+		<li><a href="pg.6 Editing tools.html">Editing Tools</a></li>
+		<li><a href="pg.7 Video on Angles.html">Importance of Angles</a></li>
+		<li><a href="pg.8 Marketing Photos.html">Marketing Photos</a></li>
+		<li><a href="pg.9 Prices_Packages for Joining the Photographers Club.html">Price Packages</a></li>
+		<li><a href="pg.10 Different Types of Cameras Page.html">Different type of camera</a></li>
+		<li><a href="pg.11 Drone Camera Photography Page.html">Drones</a></li>
+		<li><a href="pg.3 About Us.html"> About Us</a></li>
+		<li><a href="pg.12 Contact Us Page.html">Contact US</a></li>
+	</ul>
+	
+	<h2 class="sign"><a href="pg.1 Registration.html"> Sign Up</a></h2>
+	<h2 class="login"><a href="pg.2 Login Page.html"> Login</a></h2>
+
+	<center><div class="border">
+	
+	<div class="left">
+	<h1>Top 3 Inspiring Photographers</h1>
+
+	<label for="Chase Jarvis"><h2 style="text-align: center;">Chase Jarvis</h2></label>
+	
+	<div class="fade-in-image">
+
+	<img src="Chase Jarvis.jpg" alt="Image Unavailable" style="width:275px;height:300px;">
+	
+	</div>
+		<br><center><a href="https://twitter.com/chasejarvis"><cite>Chase Jarvis</cite></a></center>
+	
+	<button type="button" class="collapsible"><center><i><b>Show Bio</b></i></center></button>
+	<div class="content">
+
+	<p>Chase Jarvis was originally planning on attending medical school, but after his grandfather passed away and left him his photography equipment he discovered his true passion. 
+	After studying at the University of Washington Chase Jarvis has been quite successful in the commercial photography business. 
+	He has been recognized for multiple awards, including an award from the Advertising Photographers of America.</p>
+
+	</div>
+
+	<label for="Sarah Ann Loreth"><h2 style="text-align: center;">Sarah Ann Loreth</h2></label>
+	
+	<div class="fade-in-image">
+
+	<img src="Sarah Ann Loreth.png" alt="Image Unavailable" style="width:275px;height:300px;">
+		
+	</div>
+		<br><center><a href="https://travelmassive.com/sarahannloreth"><cite>Sarah Ann Loreth</cite></a></center>
+
+	<button type="button" class="collapsible"><center><i><b>Show Bio</b></i></center></button>
+	<div class="content">
+
+	<p>Sarah Ann Loreth began her photography career as a hobby. Using photography as an outlet for stress and as a way to relax from a demanding job.
+	However she soon realized that what she really wanted to do was travel and capture powerful images of the natural world. Sarah's main focus is on travel
+	photography and landscapes.</p>
+
+	</div>
+	
+	<label for="Cedric Blanchon"><h2 style="text-align: center;">Cedric Blanchon</h2></label>
+	
+	<div class="fade-in-image">
+
+	<img src="Cedric Blanchon.jpg" alt="Image Unavailable" style="width:275px;height:300px;">
+	
+	</div>
+		<br><center><a href="https://twitter.com/CedricBlanchon"><cite>Cedric Blanchon</cite></a></center>
+
+	<button type="button" class="collapsible"><center><i><b>Show Bio</b></i></center></button>
+	<div class="content">
+
+	<p>Cedric Blanchon is a French photographer known mainly for his use of an iphone camera for his work. He creates stunning and visually compelling works
+	that often use some kind of illusion or method to convey some unusual photos. He describes his work as iphotography and shoots most of his work on the iphone 4
+	that he carries with him wherever he goes.</p>
+
+	</div>
+
+	</div>
+
+	</div></center>
+
+</body>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight) {
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+}
+
+</script>
+
+</html>

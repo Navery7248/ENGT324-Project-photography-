@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Project </title>
+   <link rel="stylesheet" href="mystylesheet.css">
+<style>
+	
+	div {
+  background-color: white;
+  padding: 50px 50px 50px 50px;
+  margin: 20px 250px 20px 300px;
+  border: 15px solid black;
+  width: 850px;
+}
+	
+ul {
+       
+		float: left;
+		background-color: white;
+  		width: 150px;
+  		border: 10px solid black;
+  		padding: 25px 25px 25px 50px;
+		
+}
+
+</style>
+</head>
+<body>
+<ul>
+		<li><a href="pg.0 Profile Upload.html"> Profile</a></li>
+		<li><a href="index.html"> Home</a></li>
+		<li><a href="pg.5 Inspiring Photographers.html">Inspriring Photos</a></li>
+		<li><a href="pg.6 Editing tools.html">Editing Tools</a></li>
+		<li><a href="pg.7 Video on Angles.html">Importance of Angles</a></li>
+		<li><a href="pg.8 Marketing Photos.html">Marketing Photos</a></li>
+		<li><a href="pg.9 Prices_Packages for Joining the Photographers Club.html">Price Packages</a></li>
+		<li><a href="pg.10 Different Types of Cameras Page.html">Different type of camera</a></li>
+		<li><a href="pg.11 Drone Camera Photography Page.html">Drones</a></li>
+		<li><a href="pg.3 About Us.html"> About Us</a></li>
+		<li><a href="pg.12 Contact Us Page.html">Contact US</a></li>
+	</ul>
+<div id="center">
+    <h2 class="sign"><a href="pg.1 Registration.html"> Sign Up</a></h2>
+	<h2 class="login"><a href="pg.2 Login Page.html"> Login</a></h2>
+<h1> Photography Club </h1>
+<h2>Registration</h2>
+<form action= "/database server.php" onsubmit = "post()">
+<label>First Name: <input type = "text" name = "First Name" required=""></label><br>
+<label>Last Name: <input type = "text" name = "Last Name" required=""></label><br>
+<label>WSU ID: <input type = "text" name = "WSU ID" required=""></label><br>
+<label>Email: <input type = "text" name = "Email" required=""></label><br>
+<label>Create Password: <input type = "password" name = "password" required=""></label><br>
+<label>Confirm Password: <input type = "password" name = "confirmed password" required=""></label><br>
+<label>Phone Number (optional): <input type = "text" name = "phone number (optional)" required=""></label><br>
+<label>Gender (optional): 
+<select id = "Gender" >
+<option value = "Choose"> Choose </option>
+<option value = "Male"> Male </option>
+<option value = "Female"> Female </option>
+<option value = "Prefer not to say"> Prefer not to say </option>
+</select><br>
+<label>Reason for wanting to join: <textarea name = "Reason for wanting to join:"> </textarea></label><br>
+
+<label>
+ <input type = "submit" value = "submit">
+ </label><br>
+
+</form>
+
+<script>
+function post() {
+alert ("successfully submitted");
+}
+</script>
+</div>
+</body>
+</html>

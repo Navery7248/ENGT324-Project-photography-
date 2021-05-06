@@ -1,0 +1,164 @@
+<Doctype! html>
+<html>
+
+<head>
+	<title>Product and Marketing Photography</title>
+
+	<link rel="stylesheet" href="mystylesheet.css">
+<style>
+	.border {
+		background-color: white;
+  		width: 1100px;
+  		border: 15px solid black;
+  		padding: 50px 50px 50px 50px;
+  		margin: 20px 20px 20px 20px;
+	}
+	ul {
+		
+		float: left;
+		background-color: white;
+  		width: 150px;
+  		border: 10px solid black;
+  		padding: 25px 25px 25px 50px;
+	
+	}
+	img {
+	border: 5px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	}
+	.collapsible {
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+	.active, .collapsible:hover {
+		background-color: #2573C6;
+	}
+
+	.content {
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+</style>
+</head>
+
+<body>
+    <h2 class="sign"><a href="pg.1 Registration.html"> Sign Up</a></h2>
+	<h2 class="login"><a href="pg.2 Login Page.html"> Login</a></h2>
+<ul>
+		<li><a href="pg.0 Profile Upload.html"> Profile</a></li>
+		<li><a href="index.html"> Home</a></li>
+		<li><a href="pg.5 Inspiring Photographers.html">Inspriring Photos</a></li>
+		<li><a href="pg.6 Editing tools.html">Editing Tools</a></li>
+		<li><a href="pg.7 Video on Angles.html">Importance of Angles</a></li>
+		<li><a href="pg.8 Marketing Photos.html">Marketing Photos</a></li>
+		<li><a href="pg.9 Prices_Packages for Joining the Photographers Club.html">Price Packages</a></li>
+		<li><a href="pg.10 Different Types of Cameras Page.html">Different type of camera</a></li>
+		<li><a href="pg.11 Drone Camera Photography Page.html">Drones</a></li>
+		<li><a href="pg.3 About Us.html"> About Us</a></li>
+		<li><a href="pg.12 Contact Us Page.html">Contact US</a></li>
+	</ul>
+
+	
+
+	<center><div class="border">
+	<h1>Tips and Examples of Product Photography</h1>
+
+	<div class="left">
+
+	<label for="Good vs Bad Lighting"><h2 style="text-align: center;">Good vs Bad Lighting</h2></label>
+	
+	<div class="fade-in-image">
+
+	<img src="Bad-Good-L.jpg" alt="Image Unavailable" style="width:725px;height:450px;">
+	
+	</div>
+		<br><center><a href="https://clippingpathindia.com/blogs/tips/how-should-i-choose-the-color-for-my-product-background"><cite>Good vs Bad Lighting</cite></a></center>
+	
+	<button type="button" class="collapsible"><center><i><b>Collapse Explanation</b></i></center></button>
+	<div class="content">
+
+	<p>This may seem obvious, but it is an important component of a professional and effective 
+	product photo to make sure that the product is shot in good lighting. As you can see in the example above the 
+	lighting on the left is much worse than the example above to the right. You can see the glare of the product on 
+	the backdrop causing it to look messy and unprofessional, which doesn't make the product look very good.</p>
+
+	</div>
+
+	<label for="The rule of thirds"><h2 style="text-align: center;">The Rule of Thirds</h2></label>
+	
+	<div class="fade-in-image">
+	
+	<img src="the rule of thirds.png" alt="Image Unavailable" style="width:725px;height:450px;">
+	
+	</div>
+		<br><center><a href="https://mamabear.com.au/three-composition-tips-for-product-photography/"><cite>Rule of Thirds</cite></a></center>
+
+	<button type="button" class="collapsible"><center><i><b>Collapse Explanation</b></i></center></button>
+	<div class="content">
+
+	<p>The rule of thirds is a method that allows you to produce stunning and natural photos while still showcasing the subject of the photo.
+	To achieve this you must think, or divide, the area by two horizontal and two vertical lines and try and place the subject of the photograph
+	on the intersection of these lines in order to make a natural photo.</p>
+
+	</div>
+
+	<label for="Shoot In Different Angles"><h2 style="text-align: center;">Shoot In Different Angles</h2></label>
+	
+	<div class="fade-in-image">
+
+	<img src="product angles.jpg" alt="Image Unavailable" style="width:725px;height:450px;">
+
+	</div>
+		<br><center><a href="https://id.pinterest.com/pin/297026537903737069/"><cite>Photography Angles</cite></a></center>
+
+	<button type="button" class="collapsible"><center><i><b>Collapse Explanation</b></i></center></button>
+	<div class="content">
+
+	<p>Finally, in order to make sure that you get the best possible photo of the product it is always good practice to
+	try out a variety of different camera angles. Different angles will work better for different products, it depends on
+	the material of the product the lighting and the location, as well as many other factors. So it is best to try out the angles
+	shown above to try and get the best visual that you can.
+
+	</div>
+
+	</div>
+
+	</div></center>
+
+</body>
+
+<script>
+	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight) {
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+}
+
+</script>
+
+</html>
