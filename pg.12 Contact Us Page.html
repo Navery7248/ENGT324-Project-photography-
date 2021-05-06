@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="mystylesheet1.css">
+
+<title>Contact Us</title>
+
+<style>
+	.border {
+		background-color: white;
+  		width: 1100px;
+  		border: 15px solid black;
+  		padding: 50px 50px 50px 50px;
+  		margin: 20px 20px 20px 20px;
+	}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  }
+  
+  textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  
+input[type=submit] {
+background-color: #00BFFF;
+color: white;
+padding: 16px 32px;
+border-radius: 50%
+}
+
+ul { 
+        
+		float: left;
+		background-color: white;
+  		width: 150px;
+  		border: 10px solid black;
+  		padding: 25px 25px 25px 50px;
+	
+}
+
+
+</style>
+
+
+	</head>
+	
+<body>
+    <h2 class="sign"><a href="pg.1 Registration.html"> Sign Up</a></h2>
+	<h2 class="login"><a href="pg.2 Login Page.html"> Login</a></h2>
+<ul>
+		<li><a href="pg.0 Profile Upload.html"> Profile</a></li>
+		<li><a href="pg.4 Project Home.html"> Home</a></li>
+		<li><a href="pg.5 Inspiring Photographers.html">Inspriring Photos</a></li>
+		<li><a href="pg.6 Editing tools.html">Editing Tools</a></li>
+		<li><a href="pg.7 Video on Angles.html">Importance of Angles</a></li>
+		<li><a href="pg.8 Marketing Photos.html">Marketing Photos</a></li>
+		<li><a href="pg.9 Prices_Packages for Joining the Photographers Club.html">Price Packages</a></li>
+		<li><a href="pg.10 Different Types of Cameras Page.html">Different type of camera</a></li>
+		<li><a href="pg.11 Drone Camera Photography Page.html">Drones</a></li>
+		<li><a href="pg.3 About Us.html"> About Us</a></li>
+		<li><a href="pg.12 Contact Us Page.html">Contact US</a></li>
+	</ul>
+<!-- Contact Us -->
+<div>
+<h1> Contact Us </h1>
+<h2> We'd love to help, or feel free to say hello! </h2>
+
+
+<form action="/action_page.php"
+onsubmit="contactus()">
+
+<label for="Name">Your Name:</label>
+		<input id="Name" name="Name" type="text" placeholder="Your Name" required>
+<br>
+<br>
+<label for="Email">Email:</label>
+		<input id="Email" name="Email" type="text" placeholder="Email" required><br>
+
+
+<p>Message:<br>
+
+		<textarea name="explanation" rows="4" cols="50"> Let us know your thoughts...</textarea>
+		</p>
+		
+<input type="submit" name="Submit">
+</form>
+<script>
+function contactus() {
+alert("Form Submitted");
+}
+</script>
+
+
+
+</div>
+
+	</body>
+	
+</html>
